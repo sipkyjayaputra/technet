@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Technet Vision Indonesia</title>
+
+    <style>
+        .lead {
+            font-size: 16px !important;
+        }
+        .display-1 {
+            font-size: 50px;
+        }
+        .display-2 {
+            font-size: 45px;
+        }
+        .display-3 {
+            font-size: 40px;
+        }
+        .display-4 {
+            font-size: 35px;
+        }
+        .display-5 {
+            font-size: 30px;
+        }
+        .display-6 {
+            font-size: 25px;
+        }
+        .display-7 {
+            font-size: 20px;
+        }
+        .mapouter{
+            position:relative;
+            text-align:right;
+            height:350px;
+            width:100%;
+        }
+        .gmap_canvas {
+            overflow:hidden;
+            background:none!important;
+            height:350px;
+            width:100%;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white"  id="home">
+        <div class="container py-3">
+            <a class="navbar-brand" href="#home"><img src="images/logo.png" class="img-fluid" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active lead" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  lead" aria-current="page" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  lead" aria-current="page" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  lead" aria-current="page" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  lead" aria-current="page" href="#clients">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  lead" aria-current="page" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <a class="btn btn-info text-white mx-4 my-4" href="#home" style="position: fixed; width: 40px; height: 40px; right: 0; bottom: 0;"> <i class="fa fa-arrow-up"></i> </a>
+
+    <div class="container">
+        <div class="row d-flex align-items-center jusitfy-content-center" style="min-height: 85vh;">
+            <div class="col-12 col-md-6">
+                <h2 class="display-3">Your Leading and Trusted Solutions Partner</h2>
+                <p class="lead mt-5">builds and delivers best solutions with industry standard. This ensures that our clients can be secure in the knowledge that we are investing in the most up-to-date technology, professionally installed by our fully qualified engineers.</p>
+                <a class="btn btn-info shadow px-4 py-2 lead text-white lead" style="border-radius: 20px;">Get Started <i class="fa fa-arrow-right" style="padding-left: 10px;"></i></a>
+            </div>
+            <div class="col-12 col-md-6">
+                <img class="img-fluid" src="images/dashboard/dashboard.png" />
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="bg-light" id="services">
+        <div class="container text-center py-5">
+            <h2 class="display-4">Our Services</h2>
+            <p class="lead textt-muted fst-italic">"Smart Building System Integrator"</h2>
+            <div class="row mt-5 d-flex align-items-center justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4 px-3 py-3 text-start">
+                    <div class="card shadow" style="border-radius: 20px;">
+                        <div class="card-body px-4 py-4" style="max-height: 300px; ">
+                            <i class="fa fa-database text-info display-1 mb-4"></i>
+                            <h3 class="display-6">Data Center</h3>
+                            <div style="max-height: 100px;
+                            word-break: break-all;
+                            text-overflow: ellipsis;
+                            overflow: hidden;">
+                                <p class="lead">As our consultation service, we assist you to determine what your business' data center require. Then we further study the location to add details to the design and planning. At this stage we pinpoint potential obstacles that might be found on field to be considered in the planning to avoid future installation problems.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 px-3 py-3 text-start">
+                    <div class="card shadow" style="border-radius: 20px;">
+                        <div class="card-body px-4 py-4" style="max-height: 300px;">
+                            <i class="fa fa-house-signal text-info display-1 mb-4"></i>
+                            <h3 class="display-6">Smart Office</h3>
+                            <div style="max-height: 100px;
+                            word-break: break-all;
+                            text-overflow: ellipsis;
+                            overflow: hidden;">
+                                <p class="lead">Simplify your office by utilizing all of the equipment using a single touch. Smart monitoring system will give you access to electricity usage, and control by giving schedule when to turned on and off. Managed print service also part of our services to enhance your office productivity without worrying anything about printing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 px-3 py-3 text-start">
+                    <div class="card shadow" style="border-radius: 20px;">
+                        <div class="card-body px-4 py-4" style="max-height: 300px;">
+                            <i class="fa fa-network-wired text-info display-1 mb-4"></i>
+                            <h3 class="display-6">Structured Cabling System</h3>
+                            <div style="max-height: 100px;
+                            word-break: break-all;
+                            text-overflow: ellipsis;
+                            overflow: hidden;">
+                                <p class="lead">Having SCS as our core business for over 8 years, we do more than just connect cables; we build comprehensive and reliable caling infrastructures. No installation is too simple or too complex to deserve excellent service.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 px-3 py-3 text-start">
+                    <div class="card shadow" style="border-radius: 20px;">
+                        <div class="card-body px-4 py-4" style="max-height: 300px;">
+                            <i class="fa fa-robot text-info display-1 mb-4"></i>
+                            <h3 class="display-6">Internet of Things</h3>
+                            <div style="max-height: 100px;
+                            word-break: break-all;
+                            text-overflow: ellipsis;
+                            overflow: hidden;">
+                                <p class="lead">Technet Vision Indonesia and Crestron is one IoT solution that create automation solutions that transform the way people live their lives, making their day-to-day tasks easier and improving efficiency and productivity. Using technologies to connect the real world to the Internet, we create new value for business.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 px-3 py-3 text-start">
+                    <div class="card shadow" style="border-radius: 20px;">
+                        <div class="card-body px-4 py-4" style="max-height: 300px;">
+                            <i class="fa fa-city text-info display-1 mb-4"></i>
+                            <h3 class="display-6">Smart Building</h3>
+                            <div style="max-height: 100px;
+                            word-break: break-all;
+                            text-overflow: ellipsis;
+                            overflow: hidden;">
+                                <p class="lead">We believe that not only your office, your building need to be smarter. Our smart building solution will ensure that your building more secure than ever. Enterprise level security with integrated access control, intrusion detection and building automation are part of our services. Our smart building solutions are easy to operate, simple to integrate and effortless to extend.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 px-3 py-3 text-start">
+                    <div class="card shadow" style="border-radius: 20px;">
+                        <div class="card-body px-4 py-4" style="max-height: 300px;">
+                            <i class="fa fa-people-group text-info display-1 mb-4"></i>
+                            <h3 class="display-6">Collaboration Room</h3>
+                            <div style="max-height: 100px;
+                            word-break: break-all;
+                            text-overflow: ellipsis;
+                            overflow: hidden;">
+                                <p class="lead">Designed to promote interaction and collaboration between departments / business units allowing them to make complex decisions and monitoring in an efficient manner.One facility, multiple functions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 px-3 py-3 text-start">
+                    <div class="card shadow" style="border-radius: 20px;">
+                        <div class="card-body px-4 py-4" style="max-height: 300px;">
+                            <i class="fa fa-chart-line text-info display-1 mb-4"></i>
+                            <h3 class="display-6">Managed Data Analytics</h3>
+                            <div style="max-height: 100px;
+                            word-break: break-all;
+                            text-overflow: ellipsis;
+                            overflow: hidden;">
+                                <p class="lead">Build and compose your Business Intelligence based on your daily data. Data collecting, processing and visualization in one package. Connect your data from anywhere to unlimited possibilities of integration to visualize on reporting dashboard. On the other hand, we also partner of ERSI Indonesia, which bring you world-leading Geographic Information System (GIS) solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SERVICES -->
+
+    <!-- PRODUCTS -->
+    <div id="products">
+        <div class="container text-center py-5 px-md-5">
+            <h2 class="display-4">Our Products</h2>
+            <div class="row mt-5">
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card shadow">
+                        <img src="images/products/1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="display-6">Collaboration Room</h3>
+                            <div style="min-height: 250px; max-height: 250px; text-overflow: ellipsis; overflow: hidden;" class="my-4">
+                                <p class="lead">Every business can benefit from collaboration, when people share ideas and work together. It's a chance to improve productivity and results. Collaboration room solutions give you those oppurtunities by enabling you to work with information in more meaningful, effective ways.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card shadow">
+                        <img src="images/products/2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="display-6">Smart Meeting Room</h3>
+                            <div style="min-height: 250px; max-height: 250px; text-overflow: ellipsis; overflow: hidden;" class="my-4">
+                                <p class="lead">It usually requires a person from the help desk to be present during this set up process. With our Smart Meeting Room automation solution you can do all of the tasks with the touch of a single button.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card shadow">
+                        <img src="images/products/3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="display-6">RFID Asset Personal Tracking</h3>
+                            <div style="min-height: 250px; max-height: 250px; text-overflow: ellipsis; overflow: hidden;" class="my-4">
+                                <p class="lead">Asset tracking is the process of tracking physical assets, usually equipment, via barcode scanning labels or RFID or GPS tags to broadcast an asset’s location. Asset tracking helps improve the accuracy and efficiency of keeping assets secure. This means the barcode labels, GPS and RFID tags improve the accuracy of asset location and improve the efficiency in moving assets in and out of storage facilities..</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card shadow">
+                        <img src="images/products/4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="display-6">RFID Tyre Management</h3>
+                            <div style="min-height: 250px; max-height: 250px; text-overflow: ellipsis; overflow: hidden;" class="my-4">
+                                <p class="lead">Our tire tags provide superior range and durability, allowing easier scanning and accessibility. This means stock counts, binning, loading and delivery verifications can all be done with speed and accuracy. RFID will help streamline your tire operations and reduce the time taken to carry out daily tasks.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card shadow">
+                        <img src="images/products/5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="display-6">Real Time Rig Operation</h3>
+                            <div style="min-height: 250px; max-height: 250px; text-overflow: ellipsis; overflow: hidden;" class="my-4">
+                                <p class="lead">Monitoring your business is a big part and a big impact for your business. Starting from the small thing until deep down to the centre of the earth. We take you to the deepest level in monitoring system. Not just monitor the performance of your oil rig machine, you can monitor every level of sensor in every stages. With powerful and smart sensor, we could provide you data with insight on every scope.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card shadow">
+                        <img src="images/products/6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="display-6">Manage Printing Services</h3>
+                            <div style="min-height: 250px; max-height: 250px; text-overflow: ellipsis; overflow: hidden;" class="my-4">
+                                <p class="lead">One stop solution for your office printing services. Ensuring your printing services running smoothly. A streamlined interface with a single vendor to cover print, copy, fax, maintenance, asset management and provision of consumables</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PRODUCTS -->
+
+    <!-- PORTFOLIOS -->
+    <div class="bg-light" id="portfolio">
+        <div class="container text-center py-5 px-md-5">
+            <h2 class="display-4">Our Portfolio</h2>
+            <div class="row mt-5">
+                <div class="col-12 text-start mb-4">
+                    <div class="card shadow" style="border-radius: 5px;">
+                        <div class="d-flex align-items-stretch justify-content-center">
+                            <div class="d-flex align-items-stretch" style="background-image: url('images/portfolios/1.jpg'); background-color: gray; min-height: 200px; background-position: center; background-size: cover; background-repeat: no-repeat; width: 40%; border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+                            </div>
+                            <div class="card-body d-flex align-items-stretch" style="width: 60%;">
+                                <div class="">
+                                    <h3 class="display-6">Oil Industry - Collaboration Room</h3>
+                                    <p class="lead mt-4">Design & built room interior for Collaboration Room including room sound-proofing system. Their collaboration room equipped with many equipment. 4x2 Planar Wall Display, Display Processor, Video Conference and many others. Integrated with Crestron Control System to ease their productivity.</p>   
+                                </div> 
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-start mb-4">
+                    <div class="card shadow" style="border-radius: 5px;">
+                        <div class="d-flex align-items-stretch justify-content-center">
+                            <div class="d-flex align-items-stretch" style="background-image: url('images/portfolios/2.jpg'); background-color: gray; min-height: 200px; background-position: center; background-size: cover; background-repeat: no-repeat; width: 40%; border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+                            </div>
+                            <div class="card-body d-flex align-items-stretch" style="width: 60%;">
+                                <div class="">
+                                    <h3 class="display-6">Oil and Mining Industry - BOD Smart Meeting Room</h3>
+                                    <p class="lead mt-4">Oil and Mining Insdustry is fully equipped with digital equipment. One of them is 3x3 Wall Display 55 inch. All of the equipment is automated with Crestron Control System with Touch Panel. AV System is also equipped on BOD Room to support their multimedia productivity.</p>   
+                                </div> 
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-start mb-4">
+                    <div class="card shadow" style="border-radius: 5px;">
+                        <div class="d-flex align-items-stretch justify-content-center">
+                            <div class="d-flex align-items-stretch" style="background-image: url('images/portfolios/3.png'); background-color: gray; min-height: 200px; background-position: center; background-size: cover; background-repeat: no-repeat; width: 40%; border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+                            </div>
+                            <div class="card-body d-flex align-items-stretch" style="width: 60%;">
+                                <div class="">
+                                    <h3 class="display-6">Network System Relocation - Oil and Mining Industry</h3>
+                                    <p class="lead mt-4">Technet Vision provide and install all of PC, server and network equipment for Oil and Mining Industry. Dell Server, Dell all-in-one PC, Dell Ultrabook, Dell Core Switch, Dell Access Switch are part of our journey on this project. This project also include Access Door Control System and several AV System.</p>   
+                                </div> 
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-start mb-4">
+                    <div class="card shadow" style="border-radius: 5px;">
+                        <div class="d-flex align-items-stretch justify-content-center">
+                            <div class="d-flex align-items-stretch" style="background-image: url('images/portfolios/4.png'); background-color: gray; min-height: 200px; background-position: center; background-size: cover; background-repeat: no-repeat; width: 40%; border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+                            </div>
+                            <div class="card-body d-flex align-items-stretch" style="width: 60%;">
+                                <div class="">
+                                    <h3 class="display-6">Managed Printing Services - Oil and Mining Industry</h3>
+                                    <p class="lead mt-4">One stop solution for printing services. Ensuring your printing services running smoothly. A streamlined interface with a single vendor to cover print, copy, fax, maintenance, asset management and provision of consumables. Authorisation based printing on printers using RFID card. This project include on-site personnel.</p>   
+                                </div> 
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-start mb-4">
+                    <div class="card shadow" style="border-radius: 5px;">
+                        <div class="d-flex align-items-stretch justify-content-center">
+                            <div class="d-flex align-items-stretch" style="background-image: url('images/portfolios/5.png'); background-color: gray; min-height: 200px; background-position: center; background-size: cover; background-repeat: no-repeat; width: 40%; border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+                            </div>
+                            <div class="card-body d-flex align-items-stretch" style="width: 60%;">
+                                <div class="">
+                                    <h3 class="display-6">AV Training Room - Automotive Industry</h3>
+                                    <p class="lead mt-4">Technet Vision provide and install Crestron Automated Control System for 8 training rooms, 2 multi-function rooms, and 13 meeting rooms. This project also include Data Management System.</p>   
+                                </div> 
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-start mb-4">
+                    <div class="card shadow" style="border-radius: 5px;">
+                        <div class="d-flex align-items-stretch justify-content-center">
+                            <div class="d-flex align-items-stretch" style="background-image: url('images/portfolios/6.png'); background-color: gray; min-height: 200px; background-position: center; background-size: cover; background-repeat: no-repeat; width: 40%; border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+                            </div>
+                            <div class="card-body d-flex align-items-stretch" style="width: 60%;">
+                                <div class="">
+                                    <h3 class="display-6">Operation Room AV Modification - Oil and Mining Industry</h3>
+                                    <p class="lead mt-4">Technet Vision re-configure and install projectors with Design-edge technology blending system.</p>   
+                                </div> 
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-start mb-4">
+                    <div class="card shadow" style="border-radius: 5px;">
+                        <div class="d-flex align-items-stretch justify-content-center">
+                            <div class="d-flex align-items-stretch" style="background-image: url('images/portfolios/7.png'); background-color: gray; min-height: 200px; background-position: center; background-size: cover; background-repeat: no-repeat; width: 40%; border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+                            </div>
+                            <div class="card-body d-flex align-items-stretch" style="width: 60%;">
+                                <div class="">
+                                    <h3 class="display-6">Wall Display - University Facility</h3>
+                                    <p class="lead mt-4">Technet Vision provide and install Samsung Wall Display, and multimedia control by using switches and Control PC.</p>   
+                                </div> 
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-start mb-4">
+                    <div class="card shadow" style="border-radius: 5px;">
+                        <div class="d-flex align-items-stretch justify-content-center">
+                            <div class="d-flex align-items-stretch" style="background-image: url('images/portfolios/8.png'); background-color: gray; min-height: 200px; background-position: center; background-size: cover; background-repeat: no-repeat; width: 40%; border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+                            </div>
+                            <div class="card-body d-flex align-items-stretch" style="width: 60%;">
+                                <div class="">
+                                    <h3 class="display-6">Multimedia for New Office - Multimedia Industry</h3>
+                                    <p class="lead mt-4">Technet Vision provide and install multimedia equipment on this project, such as LG Displays, Epson projectors, motorised screen, audio system and Crestron Control System.</p>   
+                                </div> 
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-start mb-4">
+                    <div class="card shadow" style="border-radius: 5px;">
+                        <div class="d-flex align-items-stretch justify-content-center">
+                            <div class="d-flex align-items-stretch" style="background-image: url('images/portfolios/9.jpg'); background-color: gray; min-height: 200px; background-position: center; background-size: cover; background-repeat: no-repeat; width: 40%; border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+                            </div>
+                            <div class="card-body d-flex align-items-stretch" style="width: 60%;">
+                                <div class="">
+                                    <h3 class="display-6">Maintenance Video Conference - Liquid Natural Gas Industry</h3>
+                                    <p class="lead mt-4">Technet Vision maintain Polycom Video Conference and AV Equipments in 4 meeting rooms for 2 years.</p>   
+                                </div> 
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-start mb-4">
+                    <div class="card shadow" style="border-radius: 5px;">
+                        <div class="d-flex align-items-stretch justify-content-center">
+                            <div class="d-flex align-items-stretch" style="background-image: url('images/portfolios/10.png'); background-color: gray; min-height: 200px; background-position: center; background-size: cover; background-repeat: no-repeat; width: 40%; border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+                            </div>
+                            <div class="card-body d-flex align-items-stretch" style="width: 60%;">
+                                <div class="">
+                                    <h3 class="display-6">Video Conference System at Plant Site - Liquid Natural Gas Industry</h3>
+                                    <p class="lead mt-4">Technet Vision provide and install Polycom Video Conference and display system at plant site.</p>   
+                                </div> 
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PORTFOLIOS -->
+
+    <div id="clients">
+        <div class="container text-center py-5 px-md-5">
+            <h2 class="display-4 mb-5">Our Clients</h2>
+            <marquee>
+                <img src="images/clients/1.jpg" class="mx-4" height="100px"/>
+                <img src="images/clients/2.png" class="mx-4" height="100px"/>
+                <img src="images/clients/3.jpg" class="mx-4" height="100px"/>
+                <img src="images/clients/4.jpg" class="mx-4" height="100px"/>
+                <img src="images/clients/5.jpg" class="mx-4" height="100px"/>
+                <img src="images/clients/6.jpg" class="mx-4" height="100px"/>
+                <img src="images/clients/7.jpg" class="mx-4" height="100px"/>
+                <img src="images/clients/8.png" class="mx-4" height="100px"/>
+                <img src="images/clients/9.png" class="mx-4" height="100px"/>
+                <img src="images/clients/10.jpg" class="mx-4" height="100px"/>
+                <img src="images/clients/11.jpg" class="mx-4" height="100px"/>
+                <img src="images/clients/12.jpg" class="mx-4" height="100px"/>
+                <img src="images/clients/13.jpg" class="mx-4" height="100px"/>
+                <img src="images/clients/14.png" class="mx-4" height="100px"/>
+                <img src="images/clients/15.png" class="mx-4" height="100px"/>
+                <img src="images/clients/16.png" class="mx-4" height="100px"/>
+                <img src="images/clients/17.png" class="mx-4" height="100px"/>
+                <img src="images/clients/18.png" class="mx-4" height="100px"/>
+                <img src="images/clients/19.jpg" class="mx-4" height="100px"/>
+                <img src="images/clients/20.jpg" class="mx-4" height="100px"/>
+                <img src="images/clients/21.jpg" class="mx-4" height="100px"/>
+            </marquee>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="bg-light" id="contact">
+        <div class="container text-center py-5 px-md-5">
+            <h2 class="display-4">Contact Us</h2>
+            <div class="row mt-5">
+                <div class="col-12 col-md-6">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=City%20Loft%20Building%20Level%2010,%20Boston%2015%20Jln.%20KH.%20Mas%20Mansyur%20No.121%20Jakarta%2010220&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 text-start">
+                    <h3 class="display-6">Address</h3>
+                    <p class="lead">City Loft Building<br/>
+                        Level 10, Boston 15<br/>
+                        Jln. KH. Mas Mansyur No.121<br/>
+                        Jakarta 10220
+                    </p>
+                    <hr/>
+                    <h3 class="display-6">Mail</h3>
+                    <p><a href="mailto:sales@technetvision.com" class="lead" style="text-decoration: none;">sales@technetvision.com</a></p>
+                    <hr/>
+                    <h3 class="display-6">Phone</h3>
+                    <p><a class="lead" href="tel:+622133908836" style="text-decoration: none;">(+62) 21 - 3390 8836</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONTACT -->
+
+    <!-- FOOTER -->
+    <footer class="text-center bg-dark text-white py-4 lead">© Technet Vision Indonesia. All rights reserved.</footer>
+    <!-- FOOTER -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
